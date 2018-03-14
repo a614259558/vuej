@@ -1,23 +1,29 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+    <CommonHead></CommonHead>
+    <IndexBanner></IndexBanner>
+    <Nav></Nav>
+    <IndexFooter></IndexFooter>
   </div>
 </template>
 
 <script>
+import CommonHead from './components/CommonHead'
+import IndexBanner from './components/IndexBanner'
+import Nav from './components/Nav'
+import IndexFooter from './components/IndexFooter'
+
 export default {
-  name: 'App'
+  name: 'App',
+  components : {
+    CommonHead,
+    IndexBanner,
+    Nav,
+    IndexFooter
+  }
 }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  
 </style>
